@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Railways</title>
+</head>
+<body>
+    <div id="menu" class="">
+        <div id="title">
+            <img src="pics/screens/cim.jpg">
+        </div>
+        <div id="nameinput">
+            <input type="text" placeholder="ADD MEG A NEVED!">
+        </div>
+        <div id="pick">
+            <div id="difficulty">
+                <label id="difficulty-label">ÁLLÍTSD BE A NEHÉZSÉGET!</label>
+                <div id="diff-parent">
+                    <div id="easy">
+                        <button class="difficulty-button picked" id="easybtn">5x5</button>
+                        <div class="caption">KÖNNYŰ</div>
+                    </div>
+                    <div id="hard">
+                        <button class="difficulty-button" id="hardbtn">7x7</button>
+                        <div class="caption">NEHÉZ</div>
+                    </div>
+                </div>
+            </div>
+            <div id="help">
+                <button type="submit" class="btns" id="description">Leírás</button>
+                <button type="submit" class="btns" id="start">Játék indítása</button>
+            </div>
+        </div>
+        <div id="foot"><img src="pics/screens/kerites.jpg"></div>
+    </div>
+
+    <div id="rules" class="hidden">
+        <div id="rulesbox">
+            <div id="descriptionback">
+                <button type="submit" class="btns" id="menubtndes">Vissza a menübe</button>
+            </div>
+            <div id="rulestext">
+                <h3>Szabályok</h3>
+                <p>A játék különböző méretű négyzetrácsos hálón játszódhat, ahol a célunk az, hogy egy összefüggő körvasútvonalat alkossunk úgy, hogy minden olyan helyre eljusson a vonat, ahova lehetséges.</p>
+                <p>
+                    A pályán különféle elemeket lehet lerakni, oasis-ra bármit le lehet rakni, hídra és hegyre csak egy félét enged meg a játék, az üres mezőkre bármit le lehet rakni. 
+                </p>
+                <p>Mivel szeretnénk a vasúthálózat alapanyagán spórolni, így a vasúthálózat sehol nem keresztezheti önmagát, sehol nem ágazhat el, és nem haladhat át többször egy cellán!</p>
+                <p>A menüben kötelező megadni a nevet, a játek csak akkor tud elindulni, alapértelmezetten az 5x5-ös pálya van beállítva, de lehet választani a nehezebbet is. </p>
+                <p>Miután átmentünk a játékra, ott kattintással tudjuk változtatni , hogy milyen sínt szeretnénk lerakni, először a kanyarosódak jönnek 4 irányba, majd a két egyenes. A játék akkor ér véget, ha körbeér a sín és sehol nem keresztezi egymást.
+                </p>
+                <p>Ha vége a játéknak, megjelenik , hogy mennyi idő alatt sikerült teljesíteni, illetve megjelenik egy toplista. A vissza a menübe gombbal lehet visszakerülni a kezdőképernyőre, ahol új játékot kezdhetünk. </p>
+                <p>Jó szórakozást kívánok!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game" class="hidden">
+        <div id="gamemenu">
+            <div id="smalltitle"><img src="pics/screens/cim.jpg"></div>
+            <div id="data">
+                <div id="playname">
+                    Útvonaltervező:
+                </div>
+                <div id="realname"></div>
+            <div id="line"></div>
+                <div id="timer">
+                    Eltelt idő:
+                </div>
+                <div id="realtime"></div>
+            </div>
+            <div id="gameback">
+                <button type="submit" class="btns" id="menubtngame">Vissza a menübe</button>
+            </div>
+        </div>
+        <div id="map" class="grid">
+            <table>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="foot2">
+            <img src="pics/screens/kerites.jpg">
+        </div>
+    </div>
+
+    <div id="toplist" class="hidden">
+        <div>
+            <div id="stats">
+                <div id="toplistback">
+                    <button type="submit" class="btns" id="menubtntop">Vissza a menübe</button>
+                </div>
+                <div id="yourtime" class="yourtime">
+                    <div id="szoveg">Ennyi idő alatt sikerült megoldani a pályát: </div>
+                    <div id="ido"></div>
+                </div>
+            </div>
+            <div id="toplistpanel" class="yourtime"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
