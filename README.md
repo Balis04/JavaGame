@@ -1,8 +1,8 @@
-Game Description
+# Game Description
 
 This project is a path-building logic game where the player must correctly place elements on a given grid to create a valid, continuous loop.
 
-Main Features
+## Main Features
 - Menu: Players can enter their name, choose a difficulty level, and view the game rules before starting.
 - Game Board: A randomly selected map based on the chosen difficulty appears, along with all necessary elements.
 - Element Placement: Elements can be placed on the board according to specific rules (e.g., bridges must be straight, mountains require 90° turns, and nothing can be placed on an oasis).
